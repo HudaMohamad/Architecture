@@ -1,0 +1,79 @@
+/* Overrides / additions for the Next.js migration.
+   Replaces the jQuery Owl Carousel with lightweight React sliders while
+   reusing the original .owl-dots styling that already lives in style.css. */
+
+/* --- Dots (reused by both sliders) --- */
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-dots .owl-dot {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 0;
+  display: inline-flex;
+}
+.owl-dots .owl-dot span {
+  display: block;
+}
+
+/* --- Hero slider --- */
+.heroCarousel .hero__viewport {
+  position: relative;
+  overflow: hidden;
+}
+.heroCarousel .hero__slide {
+  display: none;
+}
+.heroCarousel .hero__slide.is-active {
+  display: block;
+  animation: heroFade 0.8s ease;
+}
+@keyframes heroFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Testimonial slider --- */
+.testimonialCarousel .testimonial__viewport {
+  overflow: hidden;
+}
+.testimonialCarousel .testimonial__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.testimonialCarousel .testimonial__cell {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0;
+}
+@media (min-width: 1000px) {
+  .testimonialCarousel .testimonial__cell {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 80px;
+  }
+}
+.testimonialCarousel .testimonial__dots {
+  margin-top: 85px;
+}
+
+/* Contact map iframe */
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Footer links — yellow hover to match the social-media icons */
+.footer__link li a {
+  transition: color 0.3s ease;
+}
+.footer__link li a:hover {
+  color: #f9cc41;
+}
