@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 export default function HeroCarousel() {
@@ -5,7 +6,7 @@ export default function HeroCarousel() {
     <div className="owl-carousel owl-theme heroCarousel">
       <div className="hero__viewport">
         <div className="item hero__slide is-active">
-          <img src="/img/hero-1.png" alt="Dream Heaven City" />
+          <img src={asset("/img/hero-1.png")} alt="Dream Heaven City" />
           <div className="hero__slideContent text-center">
             <h1>Dream Heaven City</h1>
             <p>

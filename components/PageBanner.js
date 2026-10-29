@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 /**
@@ -8,7 +9,7 @@ export default function PageBanner({ title, crumb }) {
   return (
     <header className="hero-banner project-bg">
       <Link className="navbar-brand" href="/">
-        <img src="/img/logo.png" alt="" />
+        <img src={asset("/img/logo.png")} alt="" />
       </Link>
       <div className="container">
         <h2 className="section-intro__subtitle">{title}</h2>

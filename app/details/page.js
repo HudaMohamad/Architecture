@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 
@@ -13,7 +14,7 @@ export default function DetailsPage() {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="about__img text-center text-md-left mb-5 mb-md-0">
-                <img className="img-fluid" src="/img/about.png" alt="About our Company" />
+                <img className="img-fluid" src={asset("/img/about.png")} alt="About our Company" />
               </div>
             </div>
             <div className="col-md-6 pl-xl-5">

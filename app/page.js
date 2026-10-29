@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 import AboutSection from "@/components/AboutSection";
@@ -15,7 +16,7 @@ export default function Home() {
       <header>
         <div className="hero">
           <Link className="navbar-brand" href="/">
-            <img src="/img/logo.png" alt="" />
+            <img src={asset("/img/logo.png")} alt="" />
           </Link>
           <HeroCarousel />
         </div>

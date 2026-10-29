@@ -1,9 +1,10 @@
 "use client";
 
+import { asset } from "@/lib/asset";
 import { useEffect, useState } from "react";
 
 const items = Array.from({ length: 5 }, () => ({
-  img: "/img/testimonial.png",
+  img: asset("/img/testimonial.png"),
   quote:
     "If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt amet.",
   name: "Alex Carter",

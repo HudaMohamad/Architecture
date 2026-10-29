@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import PageBanner from "@/components/PageBanner";
 import BlogSidebar from "@/components/BlogSidebar";
 import Footer from "@/components/Footer";
@@ -5,11 +6,11 @@ import Footer from "@/components/Footer";
 export const metadata = { title: "Blog Details" };
 
 const comments = [
-  { img: "/img/blog/c1.jpg", name: "Emily Brooks", pad: false },
-  { img: "/img/blog/c2.jpg", name: "Elsie Cunningham", pad: true },
-  { img: "/img/blog/c3.jpg", name: "Annie Stephens", pad: true },
-  { img: "/img/blog/c4.jpg", name: "Maria Luna", pad: false },
-  { img: "/img/blog/c5.jpg", name: "Ina Hayes", pad: false },
+  { img: asset("/img/blog/c1.jpg"), name: "Emily Brooks", pad: false },
+  { img: asset("/img/blog/c2.jpg"), name: "Elsie Cunningham", pad: true },
+  { img: asset("/img/blog/c3.jpg"), name: "Annie Stephens", pad: true },
+  { img: asset("/img/blog/c4.jpg"), name: "Maria Luna", pad: false },
+  { img: asset("/img/blog/c5.jpg"), name: "Ina Hayes", pad: false },
 ];
 
 export default function BlogSinglePage() {
@@ -26,7 +27,7 @@ export default function BlogSinglePage() {
                   <div className="feature-img">
                     <img
                       className="img-fluid"
-                      src="/img/blog/feature-img1.jpg"
+                      src={asset("/img/blog/feature-img1.jpg")}
                       alt=""
                     />
                   </div>
@@ -103,10 +104,10 @@ export default function BlogSinglePage() {
                   </div>
                   <div className="row mt-30 mb-30">
                     <div className="col-6">
-                      <img className="img-fluid" src="/img/blog/post-img1.jpg" alt="" />
+                      <img className="img-fluid" src={asset("/img/blog/post-img1.jpg")} alt="" />
                     </div>
                     <div className="col-6">
-                      <img className="img-fluid" src="/img/blog/post-img2.jpg" alt="" />
+                      <img className="img-fluid" src={asset("/img/blog/post-img2.jpg")} alt="" />
                     </div>
                     <div className="col-lg-12 mt-30">
                       <p>
@@ -132,7 +133,7 @@ export default function BlogSinglePage() {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                     <div className="thumb">
-                      <a href="#"><img className="img-fluid" src="/img/blog/prev.jpg" alt="" /></a>
+                      <a href="#"><img className="img-fluid" src={asset("/img/blog/prev.jpg")} alt="" /></a>
                     </div>
                     <div className="arrow">
                       <a href="#"><span className="lnr text-white lnr-arrow-left"></span></a>
@@ -151,7 +152,7 @@ export default function BlogSinglePage() {
                       <a href="#"><span className="lnr text-white lnr-arrow-right"></span></a>
                     </div>
                     <div className="thumb">
-                      <a href="#"><img className="img-fluid" src="/img/blog/next.jpg" alt="" /></a>
+                      <a href="#"><img className="img-fluid" src={asset("/img/blog/next.jpg")} alt="" /></a>
                     </div>
                   </div>
                 </div>

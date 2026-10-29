@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 export default function AboutSection() {
@@ -7,7 +8,7 @@ export default function AboutSection() {
         <div className="row align-items-center">
           <div className="col-md-5">
             <div className="about__img text-center text-md-left mb-5 mb-md-0">
-              <img className="img-fluid" src="/img/about.png" alt="" />
+              <img className="img-fluid" src={asset("/img/about.png")} alt="" />
               <a href="#/" className="about__img__date text-center">
                 <h3>26</h3>
                 <p>

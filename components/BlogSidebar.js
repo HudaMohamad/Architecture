@@ -1,10 +1,11 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 
 const popular = [
-  { img: "/img/blog/pp1.jpg", title: "Space The Final Frontier" },
-  { img: "/img/blog/pp2.jpg", title: "The Amazing Hubble" },
-  { img: "/img/blog/pp3.jpg", title: "Astronomy Or Astrology" },
-  { img: "/img/blog/pp4.jpg", title: "Asteroids telescope" },
+  { img: asset("/img/blog/pp1.jpg"), title: "Space The Final Frontier" },
+  { img: asset("/img/blog/pp2.jpg"), title: "The Amazing Hubble" },
+  { img: asset("/img/blog/pp3.jpg"), title: "Astronomy Or Astrology" },
+  { img: asset("/img/blog/pp4.jpg"), title: "Asteroids telescope" },
 ];
 
 const categories = [
@@ -36,7 +37,7 @@ export default function BlogSidebar() {
         </div>
 
         <div className="single-sidebar-widget user-info-widget">
-          <img src="/img/blog/user-info.png" alt="" />
+          <img src={asset("/img/blog/user-info.png")} alt="" />
           <a href="#">
             <h4>Charlie Barber</h4>
           </a>

@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 
@@ -13,7 +14,7 @@ export default function DreamHeavenCityPage() {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="about__img text-center text-md-left mb-5 mb-md-0">
-                <img className="img-fluid" src="/img/hero-1.png" alt="Dream Heaven City" />
+                <img className="img-fluid" src={asset("/img/hero-1.png")} alt="Dream Heaven City" />
               </div>
             </div>
             <div className="col-md-6 pl-xl-5">

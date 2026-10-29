@@ -1,28 +1,29 @@
+import { asset } from "@/lib/asset";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 
 export const metadata = { title: "Elements" };
 
 const tableRows = [
-  ["01", "/img/elements/f1.jpg", "color-1", 80],
-  ["02", "/img/elements/f2.jpg", "color-2", 30],
-  ["03", "/img/elements/f3.jpg", "color-3", 55],
-  ["04", "/img/elements/f4.jpg", "color-4", 60],
-  ["05", "/img/elements/f5.jpg", "color-5", 40],
-  ["06", "/img/elements/f6.jpg", "color-6", 70],
-  ["07", "/img/elements/f7.jpg", "color-7", 30],
-  ["08", "/img/elements/f8.jpg", "color-8", 60],
+  ["01", asset("/img/elements/f1.jpg"), "color-1", 80],
+  ["02", asset("/img/elements/f2.jpg"), "color-2", 30],
+  ["03", asset("/img/elements/f3.jpg"), "color-3", 55],
+  ["04", asset("/img/elements/f4.jpg"), "color-4", 60],
+  ["05", asset("/img/elements/f5.jpg"), "color-5", 40],
+  ["06", asset("/img/elements/f6.jpg"), "color-6", 70],
+  ["07", asset("/img/elements/f7.jpg"), "color-7", 30],
+  ["08", asset("/img/elements/f8.jpg"), "color-8", 60],
 ];
 
 const gallery = [
-  ["/img/elements/g1.jpg", "col-md-4"],
-  ["/img/elements/g2.jpg", "col-md-4"],
-  ["/img/elements/g3.jpg", "col-md-4"],
-  ["/img/elements/g4.jpg", "col-md-6"],
-  ["/img/elements/g5.jpg", "col-md-6"],
-  ["/img/elements/g6.jpg", "col-md-4"],
-  ["/img/elements/g7.jpg", "col-md-4"],
-  ["/img/elements/g8.jpg", "col-md-4"],
+  [asset("/img/elements/g1.jpg"), "col-md-4"],
+  [asset("/img/elements/g2.jpg"), "col-md-4"],
+  [asset("/img/elements/g3.jpg"), "col-md-4"],
+  [asset("/img/elements/g4.jpg"), "col-md-6"],
+  [asset("/img/elements/g5.jpg"), "col-md-6"],
+  [asset("/img/elements/g6.jpg"), "col-md-4"],
+  [asset("/img/elements/g7.jpg"), "col-md-4"],
+  [asset("/img/elements/g8.jpg"), "col-md-4"],
 ];
 
 const btnColors = [
@@ -164,7 +165,7 @@ export default function ElementsPage() {
             <h3 className="mb-30">Left Aligned</h3>
             <div className="row">
               <div className="col-md-3">
-                <img src="/img/elements/d.jpg" alt="" className="img-fluid" />
+                <img src={asset("/img/elements/d.jpg")} alt="" className="img-fluid" />
               </div>
               <div className="col-md-9 mt-sm-20 left-align-p">
                 <p>
@@ -200,7 +201,7 @@ export default function ElementsPage() {
                 </p>
               </div>
               <div className="col-md-3">
-                <img src="/img/elements/d.jpg" alt="" className="img-fluid" />
+                <img src={asset("/img/elements/d.jpg")} alt="" className="img-fluid" />
               </div>
             </div>
           </div>

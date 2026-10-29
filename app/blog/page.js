@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 import BlogSidebar from "@/components/BlogSidebar";
@@ -6,11 +7,11 @@ import Footer from "@/components/Footer";
 export const metadata = { title: "Blog" };
 
 const posts = [
-  { img: "/img/blog/feature-img1.jpg", title: "Astronomy Binoculars A Great Alternative" },
-  { img: "/img/blog/feature-img2.jpg", title: "The Basics Of Buying A Telescope" },
-  { img: "/img/blog/feature-img3.jpg", title: "The Glossary Of Telescopes" },
-  { img: "/img/blog/feature-img4.jpg", title: "The Night Sky" },
-  { img: "/img/blog/feature-img5.jpg", title: "Telescopes 101" },
+  { img: asset("/img/blog/feature-img1.jpg"), title: "Astronomy Binoculars A Great Alternative" },
+  { img: asset("/img/blog/feature-img2.jpg"), title: "The Basics Of Buying A Telescope" },
+  { img: asset("/img/blog/feature-img3.jpg"), title: "The Glossary Of Telescopes" },
+  { img: asset("/img/blog/feature-img4.jpg"), title: "The Night Sky" },
+  { img: asset("/img/blog/feature-img5.jpg"), title: "Telescopes 101" },
 ];
 
 function Meta() {
