@@ -15,9 +15,8 @@ export default function TestimonialCarousel() {
   const [active, setActive] = useState(0);
   const [perView, setPerView] = useState(1);
 
-  // Recalculate how many testimonials fit (1 on mobile, 2 from 1000px up),
-  // matching the original Owl responsive config. Done after mount to avoid
-  // any server/client markup mismatch.
+  // Recalculate how many testimonials fit (1 on mobile, 2 from 1000px up).
+  // Done after mount to avoid any server/client markup mismatch.
   useEffect(() => {
     const update = () => setPerView(window.innerWidth >= 1000 ? 2 : 1);
     update();

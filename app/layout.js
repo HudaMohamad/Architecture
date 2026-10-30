@@ -3,7 +3,7 @@ import Shell from "@/components/Shell";
 
 export const metadata = {
   title: "Sparsh Architecture",
-  description: "Sparsh Architecture — migrated to Next.js",
+  description: "Architecture firm website built with Next.js",
 };
 
 export default function RootLayout({ children }) {

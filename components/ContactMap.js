@@ -1,9 +1,8 @@
 "use client";
 
 /**
- * The original template loaded the Google Maps JS API with a hard-coded key.
- * That key is not reliable for reuse, so this uses a keyless Maps embed
- * centred on the same region (New South Wales, Australia).
+ * Keyless Google Maps embed (no API key required),
+ * centred on New South Wales, Australia.
  */
 export default function ContactMap() {
   return (

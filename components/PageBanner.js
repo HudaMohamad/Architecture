@@ -3,7 +3,6 @@ import Link from "next/link";
 
 /**
  * The inner-page hero banner with a title and breadcrumb.
- * Mirrors <header class="hero-banner project-bg"> from the original template.
  */
 export default function PageBanner({ title, crumb }) {
   return (
